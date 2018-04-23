@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h3=`Ton id est ${id} ?`
+    form(method="POST", action=`/users/${id}?_method=DELETE`)
+        div
+            button(type="submit") Enregistrer
